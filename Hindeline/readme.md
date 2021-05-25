@@ -29,13 +29,13 @@ NB: Kõik nende parameetrite väärtused (välja arvatud laenutatudRaamatud) pea
 
 ### ÜL 1.4
 Looge klassis Külastaja uus funktsioon laenutaRaamat(self), mis teeb järgmist:
-- Võtab ühe sisend parameetri
-- Lisab sisendina antud parameetri laenutatudRaamatud listi.
+- Võtab sisend parameetriks Raamat objekti.
+- Lisab sisendina antud Raamat objekti külastaja laenutatudRaamatud listi.
 
 ### ÜL 1.5
 Looge klassis Külastaja uus funktsioon tagastaRaamat(self), mis teeb järgmist:
-- Võtab ühe sisend parameetri
-- Eemaldab sisendina antud parameetri  laenutatudRaamatud listist.
+- Võtab sisend parameetriks Raamat objekti.
+- Eemaldab sisendina antud Raamat objekti külastaja laenutatudRaamatud listist.
 
 ### ÜL 1.6
 Looge klassis Külastaja uus funktsioon kuvaLaenutatudRaamatud(self), mis teeb järgmist:
@@ -46,8 +46,8 @@ Täiendage Raamat klassi nii, et lisate init meetodisse uue omaduse:
 - laenutatud, mille väärtus on vaikimisi False
 
 Täiendage laenutaRaamat(self) funktsiooni järgmiselt:
-- Funktsioon alguses kontrollib **kas** sisendina antud parameeter on juba laenutatud (mõelge millise omaduse true/false väärtust kontrollite).
-    - Kui raamat **ei ole** laenutatud, siis funktsioon lisab parameetri laenutatudRaamatud listi. Lisaks määratakse parameeter laenutatuks.
+- Funktsioon alguses kontrollib **kas** sisendina antud raamat on juba laenutatud (mõelge millise omaduse true/false väärtust kontrollite).
+    - Kui raamat **ei ole** laenutatud, siis funktsioon lisab raamatu laenutatudRaamatud listi. Lisaks määratakse raamat laenutatuks.
     - Kui raamat **on** laenutatud, siis funktsioon prindib teate "Raamatut ei saa laenutada, see on juba välja laenutatud!".
     
 ### Kontrollimine
@@ -67,4 +67,4 @@ Ja veel ühe:
 
 Kui käivitate laenutaRaamat funktsiooni ning annate sisendiks need 2 raamatut ja siis tagastate neist esimese. Peaks kuvaLaenutatudRaamatud funktsioon välja printima ainult tiitli "Parimad koka road".
 
-Kui olete teinud ka ülesande 1.7 ning proovite uuesti laenutada seda teist raamatut (mida me ei ole veel tagastanud), siis peaksite vastuseks saama "Raamatut ei saa laenutada, see on juba välja laenutatud!".
+Kui olete teinud ka ülesande 1.7 ning proovite uuesti laenutada seda teist raamatut (mida me ei ole veel tagastanud), siis peaksite vastuseks saama "Raamat on juba laenutatud".
